@@ -1,25 +1,18 @@
-import React, { Component } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 
-export class NavBar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    country:"in"
-    };
-  }
+const NavBar =(props)=> {
+  
+  // const {changeCountry}= props;  
+  // const [country, setCountry] = useState("in");
 
+  // const handleChange=(e)=> {
+  //   setCountry( e.target.value);
+  //   changeCountry(e.target.value)
+  // }
   
 
-  handleChange=(e)=> {
-    this.setState({
-      country: e.target.value
-    });
-    this.props.changeCountry(e.target.value)
-  }
-  
-
-  render() {
+ 
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -81,19 +74,19 @@ export class NavBar extends Component {
                 </li>
               </ul>
            
-              <label className="text-white m-2" htmlFor="state">Select Your Country: </label>
-              <select className="bg-dark text-white custom-select" value={this.state.country} onChange={this.handleChange}>
+              {/* <label className="text-white m-2" htmlFor="state">Select Your Country: </label>
+              <select className="bg-dark text-white custom-select" value={country} onChange={(e)=>handleChange(e)}>
                 <option defaultValue value="in">India</option>
                 <option value="us">United States of America</option>
                 <option value="jp">Japan</option>
-              </select>
+              </select> */}
             </div>
              
           </div>
         </nav>
       </div>
     );
-  }
+  
 }
 
 export default NavBar;
