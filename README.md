@@ -2,7 +2,6 @@
   
 ## Using package:
 
-- Import a HTML file and watch it magically convert to Markdown
 - In Line cdn for Boostrap.
 - react-infinite-scroll-component.
 - react-router-dom.
